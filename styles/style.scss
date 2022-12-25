@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  background-color: #1a9ada;
+  color: #fff;
+  padding: 10px 25px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(#2e14a3, #1674a3);
+  overflow: hidden;
+}
+
+/*Main*/
+
+h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: #bbe7fd;
+}
+
+.quiz {
+  margin-top: -100px;
+  background-color: #053f5c;
+  padding: 20px 15px;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 10px;
+  .btns {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn {
+      border: none;
+      border-radius: 15px;
+      width: 47%;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:focus:not(#ans-1) {
+        background-color: #f00;
+      }
+    }
+    #ans-1:focus {
+      background-color: rgb(19, 219, 19);
+    }
+  }
+}
+
+.action{
+    input{
+        display: none;
+    }
+    .btn{
+        width: 130px;
+    }
+}
